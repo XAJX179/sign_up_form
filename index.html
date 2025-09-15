@@ -35,7 +35,7 @@
     </header>
     <section class="sign-up">
       <h2>Let's do this!</h2>
-      <form id="sign-up-form" action="https://httpbin.org/post" method="post">
+      <form id="sign-up-form" action="https://httpbin.dev/post" method="post">
         <div class="input-row">
           <div class="input">
             <label for="first-name">FIRST NAME</label>
@@ -63,19 +63,19 @@
         <div class="input-row">
           <div class="input">
             <label for="password">PASSWORD</label>
-            <input type="password" name="password" id="password">
+            <input type="password" name="password" id="password" required>
           </div>
 
           <div class="input">
             <label for="confirm-password">CONFIRM PASSWORD</label>
-            <input type="password" name="confirm-password" id="confirm-password">
+            <input type="password" name="confirm-password" id="confirm-password" required>
           </div>
         </div>
 
       </form>
 
-      <button type="submit" form="sign-up-form">Create Account</button>
     </section>
+    <button type="submit" form="sign-up-form">Create Account</button>
     <footer class="log-in-message">
       <h2>
         Already have an account? <a href="https://youtu.be/X2CYWg9-2N0">Log in</a>

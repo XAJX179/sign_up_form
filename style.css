@@ -86,12 +86,21 @@ h6 {
   --logo-padding-push-down: 25vh;
   --logo-dark-bg: rgba(0, 0, 0, 0.50);
   --image-credit-width: var(--logo-width);
-  --white: #f9fafb;
   --main-width: 65vw;
   --main-gap-size: 20px;
   --introduction-width: 40vw;
   --introduction-margin-push-right: 3vw;
-  --green: #204f03;
+  --sign-up-padding: 10px;
+  --sign-up-box-shadow: grey 0px 1px 4px;
+  --input-width: 20vw;
+  --input-box-shadow: blue 0px 0px 4px;
+  --button-width: 25%;
+  --button-radius: 5px;
+  --button-border: 0px;
+  --button-padding: 10px;
+  --white: #f9fafb;
+  --green: #596d48;
+  --grey: #eff0f2;
 }
 
 body {
@@ -156,7 +165,22 @@ main {
 }
 
 .sign-up {
-  padding: var(--introduction-margin-push-right);
+  padding-left: var(--introduction-margin-push-right);
+  padding-top: var(--sign-up-padding);
+  padding-bottom: var(--introduction-margin-push-right);
+  background-color: #fff;
+  box-shadow: var(--sign-up-box-shadow);
+}
+
+.sign-up>h2 {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+#sign-up-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .input-row {
@@ -169,7 +193,52 @@ main {
   flex-direction: column;
 }
 
-.log-in-message {
+label {
+  letter-spacing: 2px;
+  font-size: 12px;
+}
 
+input {
+  border: none;
+  outline: 1px solid grey;
+  width: var(--input-width);
+  padding-left: 10px;
+  border-radius: 2px;
+}
+
+input:invalid {
+  outline: #f90808 1px solid;
+  border: none;
+}
+
+input:focus {
+  outline: blue 1px solid;
+  border: none;
+  box-shadow: var(--input-box-shadow);
+}
+
+button {
+  width: var(--button-width);
   margin-left: var(--introduction-margin-push-right);
+  background-color: var(--green);
+  color: var(--white);
+  border-radius: var(--button-radius);
+  border: var(--button-border);
+  padding: var(--button-padding);
+  font-weight: bold;
+}
+
+.log-in-message {
+  margin-left: var(--introduction-margin-push-right);
+}
+
+.log-in-message>h2 {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.log-in-message>h2>a {
+  color: var(--green);
+  font-weight: bold;
+  text-decoration-line: none;
 }
