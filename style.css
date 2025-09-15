@@ -75,9 +75,24 @@ h6 {
   isolation: isolate;
 }
 
+@font-face {
+  font-family: "norse";
+  font-weight: 200;
+  src: url("./font/norse-bold-webfont.woff2") format(woff2),
+    url("./font/norse-bold-webfont.woff") format(woff);
+}
+
 :root {
   --page-height: 100vh;
   --image-width: 35vw;
+  --logo-width: 100%;
+  --logo-img-width: 20%;
+  --logo-img-height: 30%;
+  --logo-font: "norse";
+  --logo-font-size: 4rem;
+  --logo-padding-push-down: 25vh;
+  --logo-dark-bg: rgba(0, 0, 0, 0.50);
+  --image-credit-width: var(--logo-width);
   --white: #f9fafb;
 }
 
@@ -86,8 +101,43 @@ body {
 }
 
 aside {
+  position: relative;
   height: var(--page-height);
   width: var(--image-width);
   background-image: url("./images/green_leaf_plant.jpg");
   background-size: cover;
+}
+
+
+.logo {
+  position: absolute;
+  top: var(--logo-padding-push-down);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--logo-font);
+  width: var(--logo-width);
+  background-color: var(--logo-dark-bg);
+}
+
+.logo>h1 {
+  font-size: var(--logo-font-size);
+  color: var(--white);
+}
+
+.logo>img {
+  width: var(--logo-img-width);
+  height: var(--logo-img-height);
+}
+
+.image-credit {
+  position: absolute;
+  bottom: 5px;
+  text-align: center;
+  color: var(--white);
+  width: var(--image-credit-width);
+}
+
+.image-credit>a {
+  color: var(--white)
 }
