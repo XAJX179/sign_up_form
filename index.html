@@ -9,14 +9,63 @@
 </head>
 
 <body>
-  hi
-  <img src="./images/green_leaf_plant.jpg" alt="">
+  <aside>
+    <header>
+      <div class="logo">
+        <img src="./images/odin-lined.png" alt="">
+        <h1 class="font-norse">ODIN</h1>
+      </div>
+    </header>
+    <footer>
+      Photo by
+      <a href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+        Halie West</a> on
+      <a
+        href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+        Unsplash</a>
+    </footer>
+  </aside>
+  <main>
+    <header class="introduction">
+      <p>
+        This is not a real online service! You know you need something like this in your life to help you
+        realize your sweetest dreams.
+      </p>
+      <p>Sign up <em>now</em> to get started.</p>
+      <br>
+      <p>You <em>know</em> you want to.</p>
+    </header>
+    <section class="sign-up">
+      <h2>Let's do this!</h2>
+      <form id="sign-up-form" action="https://httpbin.org/post" method="post">
+        <label for="first-name">FIRST NAME</label>
+        <input type="text" name="first-name" id="first-name" placeholder="Thor">
 
-  <footer>Photo by <a
-      href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Halie
-      West</a> on <a
-      href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-  </footer>
+        <label for="last-name">LAST NAME</label>
+        <input type="text" name="last-name" id="last-name" placeholder="Odinson">
+
+        <label for="email">EMAIL</label>
+        <input type="email" name="email" id="email" placeholder="your@email.com">
+
+        <label for="phone-number">PHONE NUMBER</label>
+        <input type="tel" name="phone-number" id="phone-number" placeholder="123456789">
+
+        <label for="password">PASSWORD</label>
+        <input type="password" name="password" id="password">
+
+        <label for="confirm-password">CONFIRM PASSWORD</label>
+        <input type="password" name="confirm-password" id="confirm-password">
+
+      </form>
+
+      <button type="submit" form="sign-up-form">Create Account</button>
+    </section>
+    <footer class="log-in-message">
+      <h2>
+        Already have an account? <a href="https://youtu.be/X2CYWg9-2N0">Log in</a>
+      </h2>
+    </footer>
+  </main>
 </body>
 
 </html>
