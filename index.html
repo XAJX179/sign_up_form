@@ -36,23 +36,41 @@
     <section class="sign-up">
       <h2>Let's do this!</h2>
       <form id="sign-up-form" action="https://httpbin.org/post" method="post">
-        <label for="first-name">FIRST NAME</label>
-        <input type="text" name="first-name" id="first-name" placeholder="Thor">
+        <div class="input-row">
+          <div class="input">
+            <label for="first-name">FIRST NAME</label>
+            <input type="text" name="first-name" id="first-name" placeholder="Thor">
+          </div>
 
-        <label for="last-name">LAST NAME</label>
-        <input type="text" name="last-name" id="last-name" placeholder="Odinson">
+          <div class="input">
+            <label for="last-name">LAST NAME</label>
+            <input type="text" name="last-name" id="last-name" placeholder="Odinson">
+          </div>
+        </div>
 
-        <label for="email">EMAIL</label>
-        <input type="email" name="email" id="email" placeholder="your@email.com">
+        <div class="input-row">
+          <div class="input">
+            <label for="email">EMAIL</label>
+            <input type="email" name="email" id="email" placeholder="your@email.com">
+          </div>
 
-        <label for="phone-number">PHONE NUMBER</label>
-        <input type="tel" name="phone-number" id="phone-number" placeholder="123456789">
+          <div class="input">
+            <label for="phone-number">PHONE NUMBER</label>
+            <input type="tel" name="phone-number" id="phone-number" placeholder="123456789">
+          </div>
+        </div>
 
-        <label for="password">PASSWORD</label>
-        <input type="password" name="password" id="password">
+        <div class="input-row">
+          <div class="input">
+            <label for="password">PASSWORD</label>
+            <input type="password" name="password" id="password">
+          </div>
 
-        <label for="confirm-password">CONFIRM PASSWORD</label>
-        <input type="password" name="confirm-password" id="confirm-password">
+          <div class="input">
+            <label for="confirm-password">CONFIRM PASSWORD</label>
+            <input type="password" name="confirm-password" id="confirm-password">
+          </div>
+        </div>
 
       </form>
 
